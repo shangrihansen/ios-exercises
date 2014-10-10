@@ -31,7 +31,7 @@
 }
 
 - (void)testThatCheeseFavoritingWorks {
-    NSString *ricottaString = @"ricotta";
+    NSString *ricottaString = @"ricotta"; // [NSString stringWithUTF8String:"ricotta"]
     NSString *favoriteCheese = [self.stringCheese favoriteCheeseStringWithCheese:ricottaString];
     
     XCTAssertEqualObjects(favoriteCheese, @"My favorite cheese is ricotta.", @"Incorrect favorite cheese string returned.");
